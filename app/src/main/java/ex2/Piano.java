@@ -1,17 +1,18 @@
 package ex2;
-public class Piano implements Playable {
-    private int numberOfKeys;
 
-    public Piano(String numberOfKeys) {
-        this.numberOfKeys = numberOfKeys;
+public class Piano implements Playable {
+    private String scale;
+
+    public Piano(String scale) {
+        this.scale = scale;
     }
 
     @Override
     public void play() {
-        System.out.println("Piano with " + numberOfKeys + " keys - Playing a soft classical melody. (C4)");
+        System.out.println("Piano - Playing a melody in the " + scale + " scale.");
     }
 
     public void openLid() {
-        System.out.println("The piano lid is opened. The sheet music stand is ready.");
+        System.out.println("The piano lid is opened.");
     }
 }

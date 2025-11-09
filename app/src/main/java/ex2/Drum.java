@@ -1,17 +1,18 @@
 package ex2;
-public class Drum implements Playable {
-    private String drumKitBrand;
 
-    public Drum(String drumKitBrand) {
-        this.drumKitBrand = drumKitBrand;
+public class Drum implements Playable {
+    private String drumType;
+
+    public Drum(String drumType) {
+        this.drumType = drumType;
     }
 
     @Override
     public void play() {
-        System.out.println(drumKitBrand + " Drums - Playing a bouncy funk beat! (Boom-Tss-Chak)");
+        System.out.println(drumType + " drum - Hitting a heavy beat.");
     }
 
     public void performDrumRoll() {
-        System.out.println(drumKitBrand + " Drums - Performing a breathtaking drum roll on the snare.");
+        System.out.println(drumType + " drum - Performing a quick roll.");
     }
 }

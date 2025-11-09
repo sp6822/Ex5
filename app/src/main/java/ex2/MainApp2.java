@@ -7,7 +7,7 @@ public class MainApp2 {
         Playable[] band = {
                 new Guitar(7),
                 new Piano("A Minor"),
-                new Drum("bass")
+                new Drum ("bass")
         };
         for (Playable instrument : band)
         {
